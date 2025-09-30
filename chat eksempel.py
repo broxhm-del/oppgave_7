@@ -20,7 +20,7 @@ class Studieplan:
         self.semestre = {i: [] for i in range(1, antall_semestre + 1)}
         self.register = {}
 
-    # --- Emneregister ---
+    #Emneregister:
     def legg_til_emne_i_register(self, emne):
         if emne.kode in self.register:
             return False
@@ -33,7 +33,7 @@ class Studieplan:
     def hent_emne(self, kode):
         return self.register.get(kode)
 
-    # --- Studieplan ---
+    #Studieplan:
     def legg_emne_i_semester(self, kode, semester):
         if kode not in self.register:
             return False
@@ -60,7 +60,7 @@ class Studieplan:
         return True
 
 
-# Meny
+#Meny
 def main():
     plan = Studieplan()
 
