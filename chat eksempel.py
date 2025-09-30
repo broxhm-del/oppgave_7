@@ -4,7 +4,6 @@ Created on Tue Sep 30 15:24:02 2025
 
 @author: Bruker
 """
-
 class Emne:
     def __init__(self, kode, navn, studiepoeng, anbefalt_semester=None):
         self.kode = kode
@@ -14,7 +13,6 @@ class Emne:
 
     def __str__(self):
         return f"{self.kode} - {self.navn} ({self.studiepoeng} sp)"
-
 
 class Studieplan:
     def __init__(self, antall_semestre=8):
@@ -62,9 +60,7 @@ class Studieplan:
         return True
 
 
-# ----------------------------
 # Meny
-# ----------------------------
 def main():
     plan = Studieplan()
 
