@@ -4,12 +4,7 @@ Created on Mon Sep 29 13:37:43 2025
 
 @author: Bruker
 """
-Dette blir bra
-# DAT120 øving 7 – enkel løsning uten json/dataclass
-# Lagrer til/leser fra en enkel tekstfil plan.txt
 
-# ---------- Data ----------
-# Alle emner: {kode: {"navn": str, "sesong": "høst"/"vår", "sp": int}}
 emner = {}
 
 # Studieplan: {semester(1..6): [emnekoder]}
@@ -29,7 +24,7 @@ def input_int(tekst):
         return None
 
 # ---------- Menyvalg ----------
-def valg1_lag_emne()
+def valg1_lag_emne():
     kode = input("Emnekode: ").strip().upper()
     if not kode:
         print("⚠️ Emnekode kan ikke være tom.")
