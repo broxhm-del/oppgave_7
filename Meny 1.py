@@ -102,6 +102,13 @@ def main():
             print("Ugyldig valg.")
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+=======
+
+
+
+  
+>>>>>>> Stashed changes
 =======
 
 
