@@ -5,11 +5,11 @@ Created on Thu Oct  2 13:42:08 2025
 @author: sabri
 """
 
-#1. sabrin - Lag et nytt emne
-#2. ida - Legg til et emne i studieplanen
-#3. hedda - Skriv ut ei liste over alle registrerte emner
-#4. sabrin - Skriv ut studieplanen med hvilke emner som er i hvert semester
-#5. ida - Sjekk om studieplanen er gyldig eller ikke
+#1. Sabrin - Lag et nytt emne
+#2. Ida - Legg til et emne i studieplanen
+#3. Hedda - Skriv ut ei liste over alle registrerte emner
+#4. Sabrin - Skriv ut studieplanen med hvilke emner som er i hvert semester
+#5. Ida - Sjekk om studieplanen er gyldig eller ikke
 
 #lager ei fil som skal leses av i starten av programmet:
 #6. Lagre emnene og studieplanen til fil
@@ -19,7 +19,7 @@ def main():
     plan = Studieplan()
 
     while True:
-        print("\nMeny:")
+        print("Meny:")
         print("1. Lag et nytt emne")
         print("2. Legg til et emne i studieplanen")
         print("3. Skriv ut alle registrerte emner")
