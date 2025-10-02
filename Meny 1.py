@@ -11,7 +11,7 @@ Created on Thu Oct  2 13:42:08 2025
 #4. Sabrin - Skriv ut studieplanen med hvilke emner som er i hvert semester
 #5. Ida - Sjekk om studieplanen er gyldig eller ikke
 
-#lager ei fil som skal leses av i starten av programmet:
+# lager ei fil som skal leses av i starten av programmet:
 #6. Lagre emnene og studieplanen til fil
 #7. Les inn emnene og studieplanen fra fil
 
