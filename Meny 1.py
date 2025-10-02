@@ -15,6 +15,31 @@ Created on Thu Oct  2 13:42:08 2025
 #6. Lagre emnene og studieplanen til fil
 #7. Les inn emnene og studieplanen fra fil
 
+antall_semestre = 6
+semestre = {i: [] for i in range(1, antall_semestre + 1)}  # Hvert semester har en liste med emner
+register = {}  # Emneregister: {kode: {"navn": navn, "studiepoeng": sp}}
+
+def lag_emne(register, kode, navn, sp):
+    if kode in register:
+        print('Emne finnes allerede')
+        return False  # Emne finnes allerede
+    register[kode] = {"navn": navn, "studiepoeng": sp}
+    return True
+
+def legg_til_emne(semestre, register, kode, sem):
+    if kode not in register:
+        return False  # Emnet finnes ikke i registeret
+    if sem not in semestre:
+        return False  # Semesteret finnes ikke
+    semestre[sem].append(kode)
+    return True
+
+def liste_av_emner(register):
+    if not register:
+        print("Ingen emner registrert enda.")
+    for kode, info in register.items():
+        print(f"{kode}: {info['navn']} ({info['studiepoeng']} studiepoeng)")
+
 def main():
     plan = Studieplan()
 
@@ -36,7 +61,7 @@ def main():
             navn = input("Navn: ")
             sp = float(input("Studiepoeng: "))
             emne = Emne(kode, navn, sp)
-            if #funksjon for oppg1:
+            if lag_emne(register, kode, navn, sp):
                 print("Emne lagt til.")
             else:
                 print("Emne finnes allerede.")
@@ -44,14 +69,14 @@ def main():
         elif valg == "2":
             kode = input("Skriv inn emnekode: ").upper()
             sem = int(input("Semester (1-8): "))
-            if #funksjon for oppg2:
+            if legg_til_emne(semestre, register, kode, sem):
                 print("Emne lagt til i studieplan.")
             else:
                 print("Kunne ikke legge til emnet.")
        
         elif valg == "3":
             print("Alle registrerte emner:")
-            for e in #funksjon fra oppg3:
+            for e in liste_av_emner(register):
                 print(" ", e)
       
         elif valg == "4":
@@ -75,3 +100,10 @@ def main():
             break
         else:
             print("Ugyldig valg.")
+<<<<<<< Updated upstream
+=======
+
+
+
+  
+>>>>>>> Stashed changes
