@@ -1,0 +1,24 @@
+{
+  "emner": {
+    "DAT120": {
+      "emnekode": "DAT120",
+      "navn": "programmering",
+      "studiepoeng": 10,
+      "semester": "H"
+    }
+  },
+  "studieplaner": {
+    "1": {
+      "id": "1",
+      "tittel": "første åt",
+      "semestre": {
+        "1": [],
+        "2": [],
+        "3": [],
+        "4": [],
+        "5": [],
+        "6": []
+      }
+    }
+  }
+}

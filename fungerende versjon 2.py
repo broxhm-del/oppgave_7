@@ -21,8 +21,6 @@ def semester(sem):
 def studiepoeng(semestre, register, sem):
     return sum(register[k]["studiepoeng"] for k in semestre.get(sem, []))
 
-# endret - bare bruk av ren logikk, ikke meny I/O (Input/Output)
-#altså denne fikser reglene/logikken bak programmet som validering
 #av emne - at emnekode ikke er tom eller allerede fins, eller at det ikke 
 #står ugyldig tall for studiepoeng som f.eks et negativt tall etc.
 def lag_emne(register):

@@ -1,0 +1,25 @@
+{
+  "semestre": {
+    "1": [
+      "FYS100",
+      "MAT100"
+    ],
+    "2": [],
+    "3": [],
+    "4": [],
+    "5": [],
+    "6": []
+  },
+  "register": {
+    "FYS100": {
+      "navn": "mekanikk",
+      "studiepoeng": 10,
+      "semester": "H"
+    },
+    "MAT100": {
+      "navn": "MATTE",
+      "studiepoeng": 10,
+      "semester": "H"
+    }
+  }
+}
